@@ -9,32 +9,56 @@
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
-    background-color: #122562;
+    background-color: var(--secondary-color);
     text-align: center;
-    color: lightgray;
+    color: var(--light-color);
     position: sticky;
     top: 0;
     z-index: 1;
+    justify-content: center;
 }
 
 .sidebar > h3 {
+    text-align: center;
     margin-top: 20px;
 }
 
+.sidebar a{
+    color: var(--light-color);
+}
+
+.sidebar-item{
+
+}
+
 .sidebar-title {
-    padding: 15px 10px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .sidebar-list {
     display: none;
 }
 
+.sidebar-image{
+    width: 60px;
+    border-radius: 50px;
+}
 
 
-
+.pages {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
 
 footer{
     background-color: var(--light-color);
@@ -103,4 +127,70 @@ footer{
 
 a{
     color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width: 576px){
+    .grid-container {
+        grid-template-areas:
+            'sidebar sidebar'
+            'filters main'
+            'footer footer';
+        grid-template-columns: 25% 75%;
+    }
+    .sidebar-list {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 50px;
+    }
+    .hide-in-desk{
+        display: none;
+    }
+    .sidebar-title{
+        padding-right: 40px;
+    }
+    .filters{
+        position: sticky;
+        top: 107px;
+    }
+    .footer{
+        grid-area: footer;
+        width: 100%;
+
+    }
+    .gallery {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-areas:
+            'sidebar filters'
+            'sidebar main'
+            'footer main';
+        grid-template-columns: 15% 85%;
+    }
+    .sidebar-list {
+        flex-direction: column;
+    }
+    .filters{
+        top:0px;
+        height: 66px;
+    }
+    .footer{
+        justify-content: end;
+    }
+    .footer > p{
+        text-align: center;
+    }
+    .gallery {
+        grid-template-columns: auto auto auto;
+    }
+
 }

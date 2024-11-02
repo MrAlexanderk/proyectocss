@@ -8,86 +8,120 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Galería de amigos</title>
 </head>
-<body>
+<body class="grid-container">
     <header>
         <div class="sidebar">
-            <div class="sidebar-title">
-                <a class="sidebar-item" href="#">
-                    <img src="/assets/img/hand.png" alt="foto" class="sidebar-image">
-                </a>
-                <h2 class="sidebar-item">Amigos-On-Demand</h2>
-                <a class="sidebar-item hide-in-desk" href="#">
-                    <i class="fa-solid fa-bars fa-2xl"></i>
-                </a>
-            </div>
-            <div class="sidebar-list">
-                <a class="sidebar-item" href="#">Inicio</a>
-                <a class="sidebar-item" href="#">Catálogo</a>
-                <a class="sidebar-item" href="#">Ofertas</a>
-                <a class="sidebar-item" href="#">Contacto</a>
+            <div class="sticky-desk">
+                <div class="sidebar-title">
+                    <a href="#">
+                        <img src="/assets/img/hand.png" alt="foto" class="sidebar-image">
+                    </a>
+                    <h2 class="hide-in-desk">Amigos-On-Demand</h2>
+                    <a class="hide-in-desk" href="#">
+                        <i class="fa-solid fa-bars fa-2xl"></i>
+                    </a>
+                </div>
+                <div class="sidebar-list">
+                    <a class="sidebar-item" href="#introduccion">Inicio</a>
+                    <a class="sidebar-item" href="#galeria">Galería</a>
+                    <a class="sidebar-item" href="#contacto">Contacto</a>
+                </div>
             </div>
         </div>
     </header>
-    
-    <main>
-        <div class="gallery">
+    <main class="centered">
+        <section id="introduccion">
+            <h1>¿Te sientes en extrema soledad?</h1>
+            <p>Bienvenido a Amigos-On-Demand, el servicio que revolucionará tu vida social desde la comodidad de tu pantalla.</p>
+            <p>¿Cansado de salir y enfrentarte a la dura realidad de la soledad?</p>
+            <p>¡No te preocupes! Aquí nos encargamos de tu patética vida social y te ofrecemos las mejores fotografías de extraños que encontrarás en internet, acompañadas de pequeñas descripciones que adornan sus “vidas”. Desde los aventureros que nunca conociste hasta los intelectuales que jamás leerás, tendrás la oportunidad de sentirte acompañado por las historias ficticias de otros seres humanos.</p>
+            <p>¡Prepárate para disfrutar de la compañía de amigos a un clic de distancia, porque tu felicidad virtual está a un scroll de separación!</p>
+        </section>
+        <div id="galeria" class="gallery">
             <div class="product-card">
-                <img src="/assets/img/amuleto_1.jpeg" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/alejandra.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>Alejandra</h2>
+                    <p>24 años</p>
+                    <p>Este ser humano es un maestro en hacer listas, pero algunas son inquietantes. Su cuaderno desgastado alberga desde “cosas por hacer” hasta “razones para no salir de casa”. Las listas tienen un tono siniestro, y títulos como “Gente que me ha decepcionado” hacen que sus amigos se pregunten si hay algo más oscuro detrás de su afán organizador.</p>
+                </div>
             </div>
             <div class="product-card">
-                <img src="/assets/img/amuleto_2.jpg" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/amanda.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>Amanda</h2>
+                    <p>25 años</p>
+                    <p>Este individuo es un adicto a las series que ha perdido el contacto con la realidad. Su mundo gira en torno a tramas perturbadoras y finales oscuros, y habla de los personajes como si fueran amigos reales. Sus amigos se preocupan por la mirada vacía en sus ojos, preguntándose si ha sido consumido por las historias que tanto ama.</p>
+                </div>
             </div>
             <div class="product-card">
-                <img src="/assets/img/amuleto_3.jpg" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/candela.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>Candela</h2>
+                    <p>23 años</p>
+                    <p>Este ser humano es un devoto de los gatos, pero su amor roza la obsesión. Tiene un altar en su casa con retratos de sus "felinos divinos" y les habla como si fueran deidades. Sus amigos sienten que los gatos son más que mascotas; son un culto extraño que acecha en la penumbra de su hogar.</p>
+                </div>
             </div>
             <div class="product-card">
-                <img src="/assets/img/amuleto_4.jpeg" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/francisco.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>Francisco</h2>
+                    <p>27 años</p>
+                    <p>Este personaje es un coleccionista de tazas, pero cada una tiene una historia inquietante. Habla de ellas como si fueran artefactos oscuros y su risa se vuelve inquietante cuando menciona las tazas que han sido testigos de momentos extraños. Sus amigos se preguntan si debería dejar de buscar tesoros en mercadillos y buscar ayuda profesional.</p>
+                </div>
             </div>
             <div class="product-card">
-                <img src="/assets/img/amuleto_5.webp" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/maria.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>María</h2>
+                    <p>21 años</p>
+                    <p>Este individuo es un entusiasta del fitness cuya dedicación es casi perturbadora. Grita motivaciones que parecen más desesperación y su mantra "No hay excusas" resuena inquietante. Sus amigos, que lo admiraban, ahora dudan si su obsesión por el ejercicio esconde un deseo de romper límites de manera aterradora.</p>
+                </div>
             </div>
             <div class="product-card">
-                <img src="/assets/img/amuleto_6.webp" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/matias.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>Matías</h2>
+                    <p>23 años</p>
+                    <p>Esta persona es un viajero aventurero, pero sus relatos son inquietantes. Cada vez que regresa, trae historias de lugares extraños, llenas de sombras que parecen cobrar vida. Sus amigos se preguntan si está contando aventuras o encuentros con algo oscuro y desconocido.</p>
+                </div>
             </div>
             <div class="product-card">
-                <img src="/assets/img/amuleto_7.webp" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/patrick.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>Patrick</h2>
+                    <p>19 años</p>
+                    <p>Este ser humano es un experto en memes, pero su humor es perturbador. Sus creaciones reflejan la vida moderna con un giro inquietante, y a menudo desconciertan a sus amigos. Cuando ríen, se preguntan si deberían preocuparse por su salud mental o si solo están cediendo a la locura del mundo digital.</p>
+                </div>
             </div>
             <div class="product-card">
-                <img src="/assets/img/amuleto_8.webp" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/tom.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>Tom</h2>
+                    <p>21 años</p>
+                    <p>Este individuo es un amante de la jardinería, pero sus plantas parecen tener un aire extraño. Habla a sus "invitados verdes" con adoración, y los vecinos juran haber escuchado risas provenientes de su jardín. Sus flores crecen de manera anormalmente rápida, lo que hace que sus amigos se pregunten qué cultiva realmente en su interior.</p>
+                </div>
             </div>
             <div class="product-card">
-                <img src="/assets/img/amuleto_9.webp" alt="imagen 1" class="imagen-tarjeta">
-                <h3>Amuleto antiguo</h3>
-                <button class="custom-button">Ver más</button>
+                <img src="/assets/img/tyler.jpg" alt="imagen 1" class="imagen-tarjeta">
+                <div class="info">
+                    <h2>Tyler</h2>
+                    <p>34 años</p>
+                    <p>Este personaje es un devoto del café, pero su búsqueda de la taza perfecta es casi macabra. Su cocina está llena de frascos con advertencias inquietantes, y cuando habla sobre el café, lo hace con una devoción aterradora. Cada vez que prepara una nueva mezcla, parece invocar algo que debería permanecer dormido, dejando a sus amigos con la duda sobre el verdadero propósito de su obsesión.</p>
+                </div>
             </div>
         </div>
         <div class="pages">
-            <a><i class="fa-solid fa-angles-left fa-lg" style="color: #454545;"></i></a>
+            <a><i class="fa-solid fa-angles-left fa-lg"></i></a>
             <a>1</a>
             <a>2</a>
             <a>3</a>
-            <a><i class="fa-solid fa-angles-right fa-lg" style="color: #454545;"></i></a>
+            <a><i class="fa-solid fa-angles-right fa-lg"></i></a>
         </div>
     </main>
-
+    <div class="bar-bg"></div>
     <footer>
-        <section class="contacto">
+        <section id="contacto" class="contacto">
             <h2>Contáctanos</h2>
             <form action="/enviar" method="post" class="formulario">
                 <div class="input-box">
